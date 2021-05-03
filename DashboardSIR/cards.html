@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Cards</title>
+    <title>SIR Tailor - Sale SIR Dashboard</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="./assets/SIR2.png" />
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,20 +34,23 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <!-- <div class="sidebar-brand-icon rotate-n-15">
+                                <i class="fas fa-laugh-wink"></i>
+                            </div> -->
+                <!-- <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div> -->
+                <div class="">
+                    <img style="width: 100px; height: 100;" src="./assets/SIR2.png" alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            <!-- <hr class="sidebar-divider my-0"> -->
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>SIR Sale Dashboard</span></a>
             </li>
 
             <!-- Divider -->
@@ -67,15 +72,15 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item active" href="cards.html">Cards</a>
+                        <a class="collapse-item" href="buttons.html">SIR Sale Dashboard</a>
+                        <a class="collapse-item active" href="cards.html">Customer Services</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="d-none nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Utilities</span>
@@ -96,44 +101,47 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+            <div class="d-none sidebar-heading">
                 Addons
             </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+            <div class="d-none">
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Pages</span>
+                    </a>
+                    <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Login Screens:</h6>
+                            <a class="collapse-item" href="login.html">Login</a>
+                            <a class="collapse-item" href="register.html">Register</a>
+                            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                            <div class="collapse-divider"></div>
+                            <h6 class="collapse-header">Other Pages:</h6>
+                            <a class="collapse-item" href="404.html">404 Page</a>
+                            <a class="collapse-item" href="blank.html">Blank Page</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
+                <!-- Nav Item - Charts -->
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Charts</span></a>
+                </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Tables</span></a>
+                </li>
+            </div>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -153,7 +161,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="d-none navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -268,8 +276,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -280,8 +287,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -292,8 +298,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -325,8 +330,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -361,10 +365,10 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Cards</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Customer Services</h1>
                     </div>
 
-                    <div class="row">
+                    <div class="d-none row">
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
@@ -457,23 +461,259 @@
                             <!-- Default Card Example -->
                             <div class="card mb-4">
                                 <div class="card-header">
-                                    Default Card Example
+                                    <h1 class="text-primary">1. Approaching</h1>
                                 </div>
                                 <div class="card-body">
-                                    This card uses Bootstrap's default styling with no utility classes added. Global
-                                    styles are the only things modifying the look and feel of this default card example.
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3 mt-3 btn btn-danger" data-toggle="modal"
+                                        data-target=".annualPromotion">Annual Promotion &
+                                        Monthly Promotion</a>
+
+                                    <div class="modal fade annualPromotion" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">1. Approaching</h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h2><a href="https://docs.google.com/spreadsheets/d/1liFE_aAd43TE5jL5clYgIIeLF6KfHxtq/edit#gid=2072036509"
+                                                            target="_blank" rel="noreferrer nofollow">Annual Promotion &
+                                                            Monthly Promotion</a></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3 mt-3 btn btn-danger" data-toggle="modal"
+                                        data-target=".italianPoint">Italian Point
+                                        Club</a>
+
+                                    <div class="modal fade italianPoint" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Italian Point
+                                                        Club</h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://docs.google.com/spreadsheets/d/1mCUgin7vhdrOn5sg-Yixtq87e_k6-s1I/edit#gid=1994823608"
+                                                            target="_blank" rel="noreferrer nofollow">Italian Point
+                                                            Club</a></h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3 mt-3 btn btn-danger" data-toggle="modal"
+                                        data-target=".customerCB">Customer Classification Benchmark</a>
+
+                                    <div class="modal fade customerCB" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Customer
+                                                        Classification Benchmark</h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://docs.google.com/spreadsheets/d/1mCUgin7vhdrOn5sg-Yixtq87e_k6-s1I/edit#gid=1075465075"
+                                                            target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3 mt-3 btn btn-danger" data-toggle="modal"
+                                        data-target=".referral">Referral</a>
+
+                                    <div class="modal fade referral" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Referral</h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/file/d/1tZDejwXehSzvDavWn2HcndRNiaoFeFof/view?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3 mt-3 btn btn-danger" data-toggle="modal"
+                                        data-target=".khoHinhAnh">Kho hình ảnh</a>
+
+                                    <div class="modal fade khoHinhAnh" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Kho Hình Ảnh</h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/drive/u/1/folders/13pBh35c08rlOg7p1d4Xda3DBA93eEXYY"
+                                                            target="_blank" rel="noreferrer nofollow">PRODUCT IMAGES</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3 mt-3 btn btn-danger" data-toggle="modal"
+                                        data-target=".SchaoKhachHang">Script Chào khách hàng</a>
+
+                                    <div class="modal fade SchaoKhachHang" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Script Chào khách
+                                                        hàng</h5>
+                                                </div>
+                                                <!-- <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/drive/u/1/folders/13pBh35c08rlOg7p1d4Xda3DBA93eEXYY"
+                                                            target="_blank" rel="noreferrer nofollow">PRODUCT IMAGES</a>
+                                                    </h1>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
                                 </div>
                             </div>
 
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
+                                    <h1 class="m-0 font-weight-bold text-primary">2. Consulting</h1>
                                 </div>
                                 <div class="card-body">
-                                    The styling for this basic card example is created by using default Bootstrap
-                                    utility classes. By using utility classes, the style of the card component can be
-                                    easily modified with no need for any custom CSS!
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3  btn btn-info" data-toggle="modal"
+                                        data-target=".timeOrderVai">Thời gian order vải</a>
+
+                                    <div class="modal fade timeOrderVai" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Thời gian order vải
+                                                    </h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://docs.google.com/spreadsheets/d/1bSBe7SuxIPFkMQbQiwDzY0Ct8p8XvFZNjb-qqaSD75U/edit?ts=5ffe64b6#gid=0"
+                                                            target="_blank" rel="noreferrer nofollow">click here</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-info" data-toggle="modal"
+                                        data-target=".tienDoSanXuat">Tiến độ sản xuất</a>
+
+                                    <div class="modal fade tienDoSanXuat" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Tiến độ sản xuất</h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://docs.google.com/spreadsheets/d/11sk1xZBwMiN9oUeuAHmctu7kt-MtytEaNH8gQkV72UI/edit?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-info" data-toggle="modal"
+                                        data-target=".priceList">Price list</a>
+
+                                    <div class="modal fade priceList" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Price list</h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://docs.google.com/spreadsheets/d/19lr2ayVb3cH-RFRvJFUfjgdhHif_HuNktQOG0gZ8n8A/edit#gid=335222517"
+                                                            target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-info" data-toggle="modal"
+                                        data-target=".consultingSaleExcellence">Consulting Sale Excellence</a>
+
+                                    <div class="modal fade consultingSaleExcellence" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Consulting Sale
+                                                        Excellence</h5>
+                                                </div>
+                                                <!-- <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://docs.google.com/spreadsheets/d/19lr2ayVb3cH-RFRvJFUfjgdhHif_HuNktQOG0gZ8n8A/edit#gid=335222517"
+                                                            target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                    </h1>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
                                 </div>
                             </div>
 
@@ -486,8 +726,8 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Dropdown Card Example</h6>
-                                    <div class="dropdown no-arrow">
+                                    <h1 class="m-0 font-weight-bold text-primary">3. Close Deal</h1>
+                                    <!-- <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -500,93 +740,441 @@
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    Dropdown menus can be placed in the card header in order to extend the functionality
-                                    of a basic card. In this dropdown card example, the Font Awesome vertical ellipsis
-                                    icon in the card header can be clicked on in order to toggle a dropdown menu.
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block p-3  btn btn-warning" data-toggle="modal"
+                                        data-target=".checkStock">Check Stock</a>
+
+                                    <div class="modal fade checkStock" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLabel">Check Stock</h1>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://www.aristonfabrics.com/availability/"
+                                                            target="_blank" rel="noreferrer nofollow">Ariston</a>
+                                                    </h1>
+                                                    <hr>
+                                                    <h1><a href="https://collection.caccioppolinapoli.it/en/jxsearch"
+                                                            target="_blank" rel="noreferrer nofollow">Caccioppoli</a>
+                                                    </h1>
+                                                    <hr>
+                                                    <h1><a href="https://www.dolcetaylor.com/cms/Demo.aspx?menu=72"
+                                                            target="_blank" rel="noreferrer nofollow">ĐNT
+                                                            (D&amp;T, Fiorello, Winseta, VBC stock, lining...)</a></h1>
+                                                    <hr>
+                                                    <h1>[Drago App Check Stock]</h1>
+                                                    <p dir="auto">(<a href="https://www.dragobiella.it/en/drago-bespoke"
+                                                            target="_blank"
+                                                            rel="noreferrer nofollow">https://www.dragobiella.it/en/drago-bespoke</a>)
+                                                    </p>
+                                                    <hr>
+                                                    <h1><a href="http://bunch.dormeuil.com/cgidev2p/liasse00.pgm"
+                                                            target="_blank" rel="noreferrer nofollow">Dormeuil</a>
+                                                    </h1>
+                                                    <hr>
+                                                    <h1><a href="http://apparel.hollandandsherry.com/gm/StockEnquiry"
+                                                            target="_blank" rel="noreferrer nofollow">Holland
+                                                            &amp; Sherry</a></h1>
+                                                    <hr>
+                                                    <h1>Loro Piana &amp; Solbiati: tải app</h1>
+                                                    <hr>
+                                                    <h1><a href="http://namvinhhf.com/products/search?q=705545&amp;q1=&amp;q2="
+                                                            target="_blank" rel="noreferrer nofollow">Nam Vinh (Salford,
+                                                            Cotspire...)</a></h1>
+                                                    <hr>
+                                                    <h1><a href="https://stock.officinepaladino.com/home/main?keyword=A407.006%2F01"
+                                                            target="_blank" rel="noreferrer nofollow">Paladino</a></h1>
+                                                    <hr>
+                                                    <h1><a href="https://stock.officinepaladino.com/home/main?keyword=A407.006%2F01"
+                                                            target="_blank" rel="noreferrer nofollow">Piacenza</a></h1>
+                                                    <hr>
+                                                    <h1><a href="https://docs.google.com/spreadsheets/d/10tu9SK5H-NsDSbUuqsh_IFjkREQYkzMF/edit#gid=940880676"
+                                                            target="_blank" rel="noreferrer nofollow">SIR Stock</a></h1>
+                                                    <hr>
+                                                    <h1>Còn lại không check trực tiếp được</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-warning" data-toggle="modal"
+                                        data-target=".saleMainManual">Sales Main Manual</a>
+
+                                    <div class="modal fade saleMainManual" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLabel">Sales Main Manual
+                                                    </h1>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/drive/folders/1-0vA2qsttz67IOq34YR7O681o4hDyN48?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Suit</a></h1>
+                                                    <h1><a href="https://drive.google.com/drive/folders/1s9X5zzs2KpzhMgd_fX7aQu19KhZCjCkz?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Shirt</a></h1>
+                                                </div>
+
+                                                <div class="pdf__attachment">
+                                                    <a href="https://trello-attachments.s3.amazonaws.com/5ff064bbd53d8613019ddb44/5ff28e72f7ac398de149a538/c8361545d7217dae56a8076720ec04b2/Manual_polo.pdf"
+                                                        target="_blank" title="Manual polo.pdf" type="button"
+                                                        class="d-block mt-3 p-3  btn btn-dark attachment-thumbnail-preview js-open-viewer"
+                                                        rel="noreferrer nofollow noopener"><i
+                                                            class="fas fa-file-download"></i> Manual Polo.pdf</a>
+
+                                                    <a href="https://trello-attachments.s3.amazonaws.com/5ff064bbd53d8613019ddb44/5ff28e72f7ac398de149a538/245b197e424cb5906643cf9c44fde05c/Manual_Shirt.pdf"
+                                                        target="_blank" title="Manual shirt.pdf" type="button"
+                                                        class="d-block mt-3  p-3  btn btn-dark attachment-thumbnail-preview js-open-viewer"
+                                                        rel="noreferrer nofollow noopener"><i
+                                                            class="fas fa-file-download"></i> Manual Shirt.pdf</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-warning" data-toggle="modal"
+                                        data-target=".salesSubManual">Sales Sub-Manual</a>
+
+                                    <div class="modal fade salesSubManual" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLabel">Sales Sub-Manual</h1>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/drive/u/1/folders/1NsBTuRMvjZ8WYgIV9TDWHoCnnKXfIaGA"
+                                                            target="_blank" rel="noreferrer nofollow">CLICK HERE</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-warning" data-toggle="modal"
+                                        data-target=".sizesetSizeChart">Sizeset size chart</a>
+
+                                    <div class="modal fade sizesetSizeChart" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLabel">Sizeset size chart
+                                                    </h1>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/drive/u/1/folders/1HnF-lIeTMLSCiC4lcqw12Vmi7_oAzYSD"
+                                                            target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-warning" data-toggle="modal"
+                                        data-target=".measurementGuide">Measurement Guide</a>
+
+                                    <div class="modal fade measurementGuide" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLabel">Measurement Guide
+                                                    </h1>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/file/d/1itHnKYoRf8pRNqyOqTD0yHPB2s5JezfF/view?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Jacket &amp;
+                                                            gilet</a></h1>
+                                                    <h1><a href="https://drive.google.com/file/d/1lHKOkp3vb--UA-Rnuuiwz_KyBqIEQvz_/view?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Pants</a></h1>
+                                                    <h1><a href="https://drive.google.com/file/d/1aSuUGE6cie1Cn-2A-1S42fvKYldLc6Da/view?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Shirt</a></h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-warning" data-toggle="modal"
+                                        data-target=".finalMeasurement">Final Measurement</a>
+
+                                    <div class="modal fade finalMeasurement" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Final Measurement
+                                                    </h5>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <a href="https://trello-attachments.s3.amazonaws.com/5ff064bbd53d8613019ddb44/5fffea9e8e1c746c4f84ffb9/f8e700c39c2651ed7b8b70e93441a31a/C%E1%BB%99ng_c%E1%BB%AD_%C4%91%E1%BB%99ng_Shirt_Polo_Bespoke.xlsx"
+                                                        target="_blank" title="Manual polo.pdf" type="button"
+                                                        class="d-block mt-3 p-3  btn btn-success attachment-thumbnail-preview js-open-viewer"
+                                                        rel="noreferrer nofollow noopener"><i
+                                                            class="fas fa-file-download"></i> Cộng cử động Shirt
+                                                        Polo Bespoke.xlsx</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Small Modal -->
+                                    <a type="button" class="d-block mt-3 p-3  btn btn-warning" data-toggle="modal"
+                                        data-target=".fittingGuide">Fitting Guide</a>
+
+                                    <div class="modal fade fittingGuide" tabindex="-1" role="dialog"
+                                        aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content p-3">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title" id="exampleModalLabel">Fitting Guide</h1>
+                                                </div>
+                                                <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                    dir="auto">
+                                                    <h1><a href="https://drive.google.com/file/d/1E-Id7VgxzdaJ5gvWbRchZRwYbBJLd-Fa/view?usp=sharing"
+                                                            target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
                             <!-- Collapsable Card Example -->
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse"
+                                <a href="#collapseCardExample12" class="d-block card-header py-3" data-toggle="collapse"
                                     role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-primary">Collapsable Card Example</h6>
+                                    <h1 class="m-0 font-weight-bold text-primary">4. Follow Up</h1>
                                 </a>
                                 <!-- Card Content - Collapse -->
                                 <div class="collapse show" id="collapseCardExample">
                                     <div class="card-body">
-                                        This is a collapsable card example using Bootstrap's built in collapse
-                                        functionality. <strong>Click on the card header</strong> to see the card body
-                                        collapse and expand!
+                                        <!-- Small Modal -->
+                                        <a type="button" class="d-block  p-3  btn btn-light" data-toggle="modal"
+                                            data-target=".emailCamOnKH">Email Cảm ơn Khách hàng</a>
+
+                                        <div class="modal fade emailCamOnKH" tabindex="-1" role="dialog"
+                                            aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content p-3">
+                                                    <div class="modal-header">
+                                                        <h2 class="text-danger modal-title" id="exampleModalLabel">Email
+                                                            Cảm ơn
+                                                            Khách hàng
+                                                        </h2>
+                                                    </div>
+                                                    <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                        dir="auto">
+                                                        <h2><a href="https://docs.google.com/document/d/1x1wEcG_JEiGJIRCBsY7Bf7F95ejHfHkEVqFzfQHzZGY/edit?usp=sharing"
+                                                                target="_blank" rel="noreferrer nofollow">Sau khi bán
+                                                                hàng</a></h2>
+                                                        <h2><a href="https://docs.google.com/document/d/12qy6MeDDm0xbMmHlR9HojXfjH-9gmgJv3riWWW4PUnI/edit?usp=sharing"
+                                                                target="_blank" rel="noreferrer nofollow">Sau khi giao
+                                                                hàng</a></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- Small Modal -->
+                                        <a type="button" class="d-block mt-3 p-3  btn btn-light" data-toggle="modal"
+                                            data-target=".formOrder">Form Order</a>
+
+                                        <div class="modal fade formOrder" tabindex="-1" role="dialog"
+                                            aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content p-3">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title" id="exampleModalLabel">Form Order
+                                                        </h1>
+                                                    </div>
+                                                    <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                        dir="auto">
+                                                        <h1><a href="https://drive.google.com/drive/u/1/folders/1Sd3C_1TB0mUr_SZvWAGikpEdcS-Dp8Tr"
+                                                                target="_blank" rel="noreferrer nofollow">Click here</a>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Small Modal -->
+                                        <a type="button" class="d-block mt-3 p-3  btn btn-light" data-toggle="modal"
+                                            data-target=".congCuDong">Cộng cử động</a>
+
+                                        <div class="modal fade congCuDong" tabindex="-1" role="dialog"
+                                            aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content p-3">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title" id="exampleModalLabel">Cộng cử động
+                                                        </h1>
+                                                    </div>
+                                                    <div class="pdf__attachment">
+                                                        <a href="https://trello-attachments.s3.amazonaws.com/5ff064bbd53d8613019ddb44/605473123437f248dcd448f8/26de1efd7146febffdc83972522b276f/C%E1%BB%99ng_c%E1%BB%AD_%C4%91%E1%BB%99ng_Shirt.xlsx"
+                                                            target="_blank" title="Manual polo.pdf" type="button"
+                                                            class="d-block mt-3 p-3  btn btn-success attachment-thumbnail-preview js-open-viewer"
+                                                            rel="noreferrer nofollow noopener"><i
+                                                                class="fas fa-file-download"></i> Cộng cử động
+                                                            Shirt.xlsx</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
+
+                                <!-- Collapsable Card Example -->
+                                <div class="card shadow mb-4">
+                                    <!-- Card Header - Accordion -->
+                                    <a href="#collapseCardExample11" class="d-block card-header py-3"
+                                        data-toggle="collapse" role="button" aria-expanded="true"
+                                        aria-controls="collapseCardExample">
+                                        <h1 class="m-0 font-weight-bold text-primary">5. Next Sales</h1>
+                                    </a>
+                                    <!-- Card Content - Collapse -->
+                                    <div class="collapse show" id="collapseCardExample">
+                                        <div class="card-body">
+                                            <!-- Small Modal -->
+                                            <a type="button" class="d-block  p-3  btn btn-dark" data-toggle="modal"
+                                                data-target=".Guarantee">Guarantee</a>
+
+                                            <div class="modal fade Guarantee" tabindex="-1" role="dialog"
+                                                aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content p-3">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="exampleModalLabel">Guarantee
+                                                            </h1>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Small Modal -->
+                                            <a type="button" class="d-block mt-3 p-3  btn btn-dark" data-toggle="modal"
+                                                data-target=".formFeedback">Form Feedback</a>
+
+                                            <div class="modal fade formFeedback" tabindex="-1" role="dialog"
+                                                aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content p-3">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title" id="exampleModalLabel">Form Feedback
+                                                            </h1>
+                                                        </div>
+                                                        <div class="current markeddown hide-on-edit js-desc js-show-with-desc"
+                                                            dir="auto">
+                                                            <h1><a href="https://docs.google.com/spreadsheets/d/1_bMI4Tx8Ef_u9lx-6ZOg_xUK4gM0BVqYZ3AkLlNWnwQ/edit?usp=sharing"
+                                                                    target="_blank" rel="noreferrer nofollow">Click
+                                                                    here</a></h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
+                    <!-- /.container-fluid -->
 
                 </div>
-                <!-- /.container-fluid -->
+                <!-- End of Main Content -->
+
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2020</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
 
             </div>
-            <!-- End of Main Content -->
+            <!-- End of Content Wrapper -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
                     </div>
                 </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 
